@@ -1,6 +1,6 @@
 body {
    
-    font-family:sans-serif;
+   
     margin-top: 30px;
 }
 
@@ -19,4 +19,8 @@ body {
 .img-medium {
     height: 200px;
 }
-
+.container{
+     font-family:sans-serif;
+     margin:0 auto;
+     max-width:800px;
+     }
