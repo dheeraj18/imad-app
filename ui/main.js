@@ -5,7 +5,7 @@ button.onclick=function (){
     var request =new XLMHttpRequest();
    
     request.onreadystatechange = function(){
-        if(request.readystate === XLMHttpRequest.DONE)
+        if(request.readyState === XLMHttpRequest.DONE)
         {
              if(request.status===200)
              {
