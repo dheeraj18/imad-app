@@ -30,7 +30,6 @@ var articles={
             <p>
               This is my article three content.Nothing more to say right now.Now just shut the f**k up and go to home.
             </p> `}
-    
 };
 function createtemplate(data){
     var title = data.title;
