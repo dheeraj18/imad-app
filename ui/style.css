@@ -1,6 +1,6 @@
 body {
-    font-family: sans-serif;
-    background-color: paleturquoise;
+   
+    
     margin-top: 30px;
 }
 
@@ -20,3 +20,8 @@ body {
     height: 200px;
 }
 
+.container{
+     font-family:sans-serif;
+     margin:0 auto;
+     max-width:800px;
+     }
