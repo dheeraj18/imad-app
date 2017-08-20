@@ -3,7 +3,14 @@ body {
    
     margin-top: 30px;
 }
-
+h2 {
+    color:red;
+    background-color:cyan; 
+}
+p {
+    color:brown;
+    background-color:paleturquoise; 
+}
 .center {
     text-align: center;
 }
