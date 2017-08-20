@@ -31,6 +31,7 @@ var articles={
               This is my article three content.Nothing more to say right now.Now just shut the f**k up and go to home.
             </p> `}
 };
+
 function createtemplate(data){
     var title = data.title;
     var heading = data.heading;
@@ -77,14 +78,6 @@ app.get('/', function (req, res) {
 app.get('/:articleName', function (req, res) {
   var articleName=req.params.articleName;
   res.send(createtemplate(articles[articleName]));  
-});
-
-app.get('/article-two', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article-two.html'));    
-});
-
-app.get('/article-three', function (req, res) {
-  res.sendFile(path.join(__dirname, 'ui', 'Article-three.html'));   
 });
 
 app.get('/ui/style.css', function (req, res) {
