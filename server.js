@@ -23,7 +23,7 @@ function createtemplate(data){
     <html>
     <head>
          
-        <title>Article 1 | Dheeraj </title>
+        <title>${title} </title>
          <link href="/ui/style.css" rel="stylesheet" /> 
           <link href="https://cdn.dribbble.com/users/5443/screenshots/3116730/dk-logo_1x.png" rel="shortcut icon"/>
     </head>
@@ -35,16 +35,14 @@ function createtemplate(data){
       </div>
        <hr>
        
-      <h2>ARTCILE ONE</h2>
+      <h2>${heading}</h2>
       
       <div>
-        AUG 16 
+        ${date} 
       </div>
       
       <div>
-         <p>
-            This is my article one content.Nothing more to say right now.Go back to home.If possible check article 2 and 3.
-         </p>
+         ${content}
       </div>
      </div> 
       
