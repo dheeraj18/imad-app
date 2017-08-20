@@ -7,7 +7,7 @@ button.onclick=function (){
     request.onreadystatechange = function(){
         if(request.readystate === XLMHttpRequest.DONE)
         {
-             if(requesy.status===200)
+             if(request.status===200)
              {
                var counter= request.responsetext;
               var span = document.getElementById('count');
