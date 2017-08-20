@@ -22,7 +22,6 @@ var articles={
             <p>
               This is my article two content.Nothing more to say right now.Go back to home.If possible check article 3.
             </p> `},
-    
     Articlethree:{
         title:'Article 3 | Dheeraj',
         date:'AUG 18 2017',
