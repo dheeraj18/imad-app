@@ -22,13 +22,14 @@ request.send(null);
 };
 
 //submit name to the endstring
-var nameInput =document.getElementById('name');
-var name =nameInput.value ;
+
 var submit=document.getElementById('submit_btn');
 submit.onclick= function(){
     var request =new XMLHttpRequest();
    
     request.onreadystatechange = function(){
+        var nameInput =document.getElementById('name');
+        var name =nameInput.value ;
         if(request.readyState === XMLHttpRequest.DONE)
         {
              if(request.status === 200)
