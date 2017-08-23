@@ -25,11 +25,11 @@ request.send(null);
 
 var submit=document.getElementById('submit_btn');
 submit.onclick= function(){
-   
     var request =new XMLHttpRequest();
    
     request.onreadystatechange = function(){
-        
+        var nameInput =document.getElementById('name');
+        var name =nameInput.value ;
         if(request.readyState === XMLHttpRequest.DONE)
         {
              if(request.status === 200)
@@ -38,7 +38,7 @@ submit.onclick= function(){
                  names=JSON.parse(names);
                 var list='';
                 for(var i=0;i< names.length; i++){
-                 list += '<li>'+names[i]+'</li>' ;
+                 list += '<li>' + names[i] +'</li>' ;
                 }
                 var ul=document.getElementById('namelist');
                 ul.innerHTML=list;
@@ -46,8 +46,7 @@ submit.onclick= function(){
              }
         }
     };
- var nameInput =document.getElementById('name');
- var name =nameInput.value ;    
+    
 request.open('GET','http://dheerajkakumani.imad.hasura-app.io/submit-name?name=' +name,true);
 request.send(null);
         
