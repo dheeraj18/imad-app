@@ -21,3 +21,11 @@ request.open('GET','http://dheerajkakumani.imad.hasura-app.io/counter',true);
 request.send(null);
 };
 
+//submit name to the endstring
+var nameInput =document.getElementById('name');
+var name =nameInput.value ;
+var submit=document.getElementById('submit_btn');
+submit.onclick= function(){
+    
+};
+
