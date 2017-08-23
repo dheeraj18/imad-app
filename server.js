@@ -93,10 +93,10 @@ app.get('/ui/style.css', function (req, res) {
 });
 
 var names=[];
-app.get('/submit.name', function (req, res) {
-  var name;
+app.get('/submit-name', function (req, res) {
+  var name=req.query.name;
   names.push(name);
-  res.send(names);
+  res.send(JSON.stringify(names));
 });
 
 app.get('/ui/madi.png', function (req, res) {
